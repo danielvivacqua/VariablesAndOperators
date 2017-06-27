@@ -10,19 +10,21 @@ namespace VariablesAndOperators
     {
         static void Main(string[] args)
         {
-            int age = 65;
-            string why = "because I said so";
-            char firstInitial = 'L';
+            //    int age = 65;
+            //    string why = "because I said so";
+            //    char firstInitial = 'L';
 
-            //floating point types
-            float floatNumber = 2.164403304897294849383961032f;
-            Console.WriteLine(floatNumber);
+            Console.WriteLine("What is the name on the reservation?");
+            string reserveName = Console.ReadLine();
 
-            double doubleNumber = 2.164403304897294849383961032d;
-            Console.WriteLine(doubleNumber);
+            Console.WriteLine("How many people are in your party?");
+            int numberOfPeople = int.Parse(Console.ReadLine());
 
-            decimal decimalNumber = 2.164403304897294849383961032m;
-            Console.WriteLine(decimalNumber);
+            double amountEach = 13.53d;
+
+            double totalBill = numberOfPeople * amountEach;
+            Console.WriteLine("Reservation: " +  reserveName);
+            Console.WriteLine("Total Due: $" + totalBill);
 
 
 
